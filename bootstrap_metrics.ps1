@@ -9,7 +9,7 @@ if (!(Test-Path $BaseDir)) {
 if (!(Get-Command python.exe -ErrorAction SilentlyContinue)) {
 
     Invoke-WebRequest `
-        -Uri "https://github.com/yajradevs/wazuh-python-monitoring/releases/download/v1/python-3.12.0-amd64.exe" `
+        -Uri "https://github.com/yajradevs/wazuh-python-monitoring/blob/main/releases/download/v1/python-3.12.0-amd64.exe" `
         -OutFile $PythonInstaller
 
     Start-Process `
